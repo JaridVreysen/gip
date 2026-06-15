@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<?php include("partials/title-meta.php"); ?>
+	<?php include("partials/head-css.php"); ?>
+</head>
+
+<body>
+
+	<!-- **************** MAIN CONTENT START **************** -->
+	<main>
+		<section class="p-0 d-flex align-items-center position-relative overflow-hidden">
+
+			<div class="container-fluid">
+				<div class="row">
+					<!-- left -->
+					<div class="col-12 col-lg-6 d-md-flex align-items-center justify-content-center bg-primary bg-opacity-10 vh-lg-100">
+						<div class="p-3 p-lg-5">
+							<!-- Title -->
+							<div class="text-center">
+								<h2 class="fw-bold">Welcome to our largest community</h2>
+								<p class="mb-0 h6 fw-light">Let's learn something new today!</p>
+							</div>
+							<!-- SVG Image -->
+							<img src="./sporters.jpeg" class="mt-5" alt="">
+							<!-- Info -->
+
+						</div>
+					</div>
+
+					<!-- Right -->
+					<div class="col-12 col-lg-6 m-auto">
+						<div class="row my-5">
+							<div class="col-sm-10 col-xl-8 m-auto">
+								<!-- Title -->
+								<span class="mb-0 fs-1">👋</span>
+								<h1 class="fs-2">Login into Eduport!</h1>
+								<p class="lead mb-4">Nice to see you! Please log in with your account.</p>
+								<p id="loginInformation" class="text-danger"></p>
+								<!-- Form START -->
+						<?php
+					echo	'<form>
+									<!-- username or email -->
+									    <div class="mb-4">
+                                            <label class="form-label">Username or email*</label>
+                                            <div class="input-group input-group-lg">
+                                                <span class="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                                                    <i class="bi bi-person-fill"></i></span>
+                                                <input type="text" class="form-control border-0 bg-light rounded-end ps-1"
+                                                    placeholder="Username or email" id="UserName" name="UserName">
+                                            </div>
+                                        </div>
+									
+									<!-- Password -->
+									<div class="mb-4">
+										<label for="inputPassword5" class="form-label">Password*</label>
+										<div class="input-group input-group-lg">
+											<span class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i class="fas fa-lock"></i></span>
+											<input type="password" class="form-control border-0 bg-light rounded-end ps-1" placeholder="password" id="Password">
+										</div>
+										<div id="passwordHelpBlock" class="form-text">
+											Your password must be 8 characters at least
+										</div>
+									</div>
+									<!-- Check box -->
+									<div class="mb-4 d-flex justify-content-between">
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input" id="exampleCheck1">
+											<label class="form-check-label" for="exampleCheck1">Remember me</label>
+										</div>
+										<div class="text-primary-hover">
+											<a href="forgot-password.php" class="text-secondary">
+												<u>Forgot password?</u>
+											</a>
+										</div>
+									</div>
+									<!-- Button -->
+									<div class="align-items-center mt-0">
+										<div class="d-grid">
+											<button class="btn btn-primary mb-0" type="button" onclick="login()" >Login</button>
+										</div>
+									</div>
+								</form>
+								<!-- Form END -->';
+						?>		
+
+								<!-- Social buttons and divider -->
+								<div class="row">
+									<!-- Divider with text -->
+									<div class="position-relative my-4">
+										<hr>
+										<p class="small position-absolute top-50 start-50 translate-middle bg-body px-5">Or</p>
+									</div>
+
+									<!-- Social btn -->
+									<div class="col-xxl-6 d-grid">
+										<a href="#" class="btn bg-google mb-2 mb-xxl-0"><i class="fab fa-fw fa-google text-white me-2"></i>Login with Google</a>
+									</div>
+									<!-- Social btn -->
+									<div class="col-xxl-6 d-grid">
+										<a href="#" class="btn bg-facebook mb-0"><i class="fab fa-fw fa-facebook-f me-2"></i>Login with Facebook</a>
+									</div>
+								</div>
+
+								<!-- Sign up link -->
+								<div class="mt-4 text-center">
+									<span>Don't have an account? <a href="sign-up.php">Signup here</a></span>
+								</div>
+							</div>
+						</div> <!-- Row END -->
+					</div>
+				</div> <!-- Row END -->
+			</div>
+		</section>
+	</main>
+	<!-- **************** MAIN CONTENT END **************** -->
+
+	<!-- Back to top -->
+	<div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
+
+
+
+	<?php include("partials/footer-scripts.php"); ?>
+
+</body>
+<script src="/js/main.js"></script>
+</html>
